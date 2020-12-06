@@ -1,16 +1,15 @@
-import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import HomeStack from './navigation/HomeStack';
 import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack'; 
 
-export default function App() {
+export default function ProfileScreen() {
   return (
-    <NavigationContainer>
+      <View>
+      <Text>This is the profile screen</Text>
       <StatusBar style="auto" />
-      <HomeStack />
-    </NavigationContainer>
+    </View>
   );
 }
 
